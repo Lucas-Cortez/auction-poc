@@ -18,7 +18,7 @@ $ docker-compose up -d
 
 Once the database is running, you need to create a `.env` file in the root directory of the project, with the following content:
 
-```json
+```bash
 DATABASE_URL=mongodb://${DATABASE_USERNAME}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}?retryWrites=true&w=majority&authSource=admin&directConnection=true
 
 DATABASE_USERNAME=root
